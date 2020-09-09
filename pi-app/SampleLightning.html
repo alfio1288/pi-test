@@ -56,12 +56,6 @@
             }
         };
 
-        function subscribeToSampleMC_IN() {
-            if (!BARRA_MC_IN) {
-                console.log('@@@ catturato @@@');
-            }
-        }
-
         function onPublishMessage(message) {
             onPublishTextArea(message);
         };
@@ -220,7 +214,12 @@
 <body>
 	<!-- <button onclick="getAppViewInfo();">Get App View Info</button>
     <br/>-->
-    <h1>Version 1.01 (ITG)</h1>
+    <h1>Version 1.02 (ITG)</h1>
+
+    <br/>
+    <button onclick="subscribeToSampleMC();">Subscribe Channel IN</button>
+    <br/>
+
 	<label for="Matricola">Numero Chiamante</label>
     <input type="text" id="telefono_chiamante" name="telefono_chiamante">
 	<br/>
