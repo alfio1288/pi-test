@@ -191,7 +191,7 @@
 		function screenPopPage(parameter) {
 			sforce.opencti.screenPop({
 				type: sforce.opencti.SCREENPOP_TYPE.URL,
-				params: {url : '/apex/TestOpenCTI?IT=2020-03-20T13:25:45Z&IC=2020-03-20T13:25:45Z&NV=800900999_ITALGAS_GeD&NC=3288680816&AI=40100&RCKI=00001&RCKDT=123456&SI=TO'}, 
+				params: {url : '/apex/TestOpenCTI?IT='+new Date()+'&IC='+new Date()+'&NV=800900999_ITALGAS_GeD&NC=3288680816&AI=40100&RCKI=00001&RCKDT=123456&SI=TO'}, 
 				callback: screenPopCallback 
 			});
         };
